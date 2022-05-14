@@ -1,26 +1,30 @@
 import React from "react";
-import Sidebar from "../Sidebar/Sidebar";
+import SidebarNav from "../Sidebar/Sidebar";
 import styled from "styled-components";
 import { v } from "../../styles/variables";
+import Topbar from "../Topbar/Topbar";
 
 const SLayout = styled.div`
     display: flex;
+    height: 100vh;
 `;
 
 const SMain = styled.main`
-    padding: calc(${v.smSpacing} * 2);
-
-    h1 {
-        font-size: 14px;
-    }
+   display: flex;
+    flex-direction: column;
+    flex: 1;
+    overflow: auto;
 `;
-
 
 const Layout = ({ children }) => {
     return (
         <SLayout>
-            <Sidebar />
-            <SMain>{children}</SMain>
+            <SidebarNav />
+
+            <SMain>
+                <Topbar />
+                {children}
+            </SMain>
         </SLayout>
     );
 };
