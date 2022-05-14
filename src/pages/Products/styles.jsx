@@ -16,7 +16,7 @@ export const ImageConatiner = styled.div`
     align-items: center;    
     justify-content: center;
     height: 80vh;
-    overflow-y: scroll;
+
     border-radius: ${v.borderRadius};
     padding: ${v.xxlSpacing};
     width: 100%;
