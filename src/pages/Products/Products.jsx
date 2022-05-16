@@ -23,7 +23,7 @@ const Products = () => {
 
     var config = {
         method: 'get',
-        url: `https://mycelia.azure-api.net/similar/id/productimages?id=${idtext}&top_k=15`,
+        url: `https://mycelia.azure-api.net/similar/id/productimages?id=${idtext}&top_k=10`,
         headers: {
             'Auth': '412862363959448ea131ec1e9cd400e3',
             'Content-Type': 'application/json'
@@ -40,8 +40,7 @@ const Products = () => {
                 console.log(error);
             });
     }, [idtext]);
-
-    console.log(results);
+    
     return (
         <ProductsContainer>
             <ImageConatiner>

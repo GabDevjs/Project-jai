@@ -8,20 +8,20 @@ import Usuarios from "./pages/Usuarios/Usuarios";
 
 const Router = () => {
     return (
-            <Switch>
-                <Route exact path="/">
-                    <HomePage />
-                </Route>
-                <Route exact path="/Produtos">
-                    <Products />
-                </Route>
-                <Route exact path="/User">
-                    <Usuarios />
-                </Route>
-                <Route exact path="/Comentarios">
-                    <Comentarios/>
-                </Route>
-            </Switch>
+        <Switch>
+            <Route exact path="/">
+                <HomePage />
+            </Route>
+            <Route exact path="/Produtos">
+                <Products />
+            </Route>
+            <Route exact path="/User">
+                <Usuarios />
+            </Route>
+            <Route exact path="/Comentarios">
+                <Comentarios />
+            </Route>
+        </Switch>
     );
 };
 

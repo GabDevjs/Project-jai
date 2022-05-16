@@ -117,6 +117,7 @@ export const ImagemItem = styled.div`
     justify-content: center;
     align-items: center;
     height: 30vh;
+    margin: ${v.smSpacing};
     padding: ${v.smSpacing};
     img {
         z-index: 1;

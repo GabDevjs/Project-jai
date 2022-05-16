@@ -53,6 +53,7 @@ export const PerfilFoto = styled.div`
 
 export const LinkContainer = styled.div`
     position: absolute;
+    z-index: 100;
     top: 11vh;
     right: 2vh;
     padding: ${v.smSpacing};
