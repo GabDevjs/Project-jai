@@ -25,7 +25,7 @@ const Products = () => {
         method: 'get',
         url: `https://mycelia.azure-api.net/similar/id/productimages?id=${idtext}&top_k=10`,
         headers: {
-            'Auth': '412862363959448ea131ec1e9cd400e3',
+            'Auth': "412862363959448ea131ec1e9cd400e3",
             'Content-Type': 'application/json'
         }
     };
